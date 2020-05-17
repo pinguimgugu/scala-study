@@ -1,6 +1,8 @@
-import CalculadorDeposito.regraDeposito
+package strategy
 
-object Main extends App {
+import strategy.CalculadorDeposito.regraDeposito
+
+object main extends App {
   println(Deposito.depositar(new Poupanca, 10))
 }
 
@@ -35,4 +37,3 @@ object Deposito {
 trait Conta
 class Corrente extends Conta
 class Poupanca extends Conta
-
